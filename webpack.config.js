@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "main.js",
-        assetModuleFilename: "assets/images/[hash][ext]"
+        assetModuleFilename: "assets/images/[hash][ext][query]"
     },
     resolve: {
         extensions: [".js"]
@@ -36,6 +36,7 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2)$/,
+                type: 'asset/resource',
                 use: {
                     loader: "url-loader",
                     options: {
