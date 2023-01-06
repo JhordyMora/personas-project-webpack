@@ -65,7 +65,8 @@ module.exports = {
                         esModule: false 
                        // AVISAR EXPLICITAMENTE SI ES UN MODULO
                 }
-                }
+                },
+                type: "javascript/auto"
             }
         ]
     },
