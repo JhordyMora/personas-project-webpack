@@ -46,6 +46,7 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2)$/,
+                // type: './assets/fonts/',
                 use: {
                     loader: "url-loader",
                     options: {
@@ -64,8 +65,9 @@ module.exports = {
                        // EL DIRECTORIO PUBLICO (SIN COMPLICACIONES)
                         esModule: false 
                        // AVISAR EXPLICITAMENTE SI ES UN MODULO
-                }
-                }
+                    }
+                },
+                type: "javascript/auto"
             }
         ]
     },
